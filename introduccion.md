@@ -8,18 +8,28 @@
 
 # CONFIGURACION
 ###### Damos click derecho y en open git bash here abrimos la consola y ponemos la siguiente información para realizar la configuración y el servidor nos reconozca.
-```
+>> rocio@Rocio MINGW64 ~/OneDrive/Desktop 
+ $ git config --global user.name “Rocio Garcia”
+ rocio@Rocio MINGW64 ~/OneDrive/Desktop
+ $ git config --global user.email 
+ rocioramirez18092@gmail.com (este email tiene 
+ que ser el mismo que usemos en nuestro repositorio remoto)
+ rocio@Rocio MINGW64 ~/OneDrive/Desktop
+ $ git config --global core.editor "code --wait" (code es la palabra clave de visual studio, si es
+ diferente hay que buscar la palabra, wait quiere
+ decir que la terminal de git va a esperar hasta que
+ nosotros cerremos el archivo en el editor de código
+ para poder seguir con las instrucciones 
 rocio@Rocio MINGW64 ~/OneDrive/Desktop
-$ git config --global user.name “Rocio Garcia”
+ $ git config --global -e (este comando es para
+ verificar que tenemos nuestra configuración y nos
+ va abrir un archivo con la información)
+ El salto de línea se trata de una forma, en mac o
+ Linux es otra la siguiente configuración es muy
+ importante
+
 rocio@Rocio MINGW64 ~/OneDrive/Desktop
-$ git config --global user.email rocioramirez18092@gmail.com (este email tiene que ser el mismo que usemos en nuestro repositorio remoto)
-rocio@Rocio MINGW64 ~/OneDrive/Desktop
-$ git config --global core.editor "code --wait" (code es la palabra clave de visual studio, si es diferente hay que buscar la palabra, wait quiere decir que la terminal de git va a esperar hasta que nosotros cerremos el archivo en el editor de código para poder seguir con las instrucciones 
-rocio@Rocio MINGW64 ~/OneDrive/Desktop
-$ git config --global -e (este comando es para verificar que tenemos nuestra configuración y nos va abrir un archivo con la información)
-El salto de línea se trata de una forma, en mac o Linux es otra la siguiente configuración es muy importante
-rocio@Rocio MINGW64 ~/OneDrive/Desktop
-$ git config --global core.autocrlf true (esta palabra es para Windows, para Linux o mac es input) 
-rocio@Rocio MINGW64 ~/OneDrive/Desktop
+$ git config --global core.autocrlf true (esta
+palabra es para Windows, para Linux o mac es input)  rocio@Rocio MINGW64 ~/OneDrive/Desktop
 $ git config --global -h (esto nos va a traer una ayuda de todas las cosas que podemos hacer, desde configurarlo e forma local y no global y demás cosas, para limpiar la terminal solo se escribe clear y se da click.
-```
+
