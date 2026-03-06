@@ -1,4 +1,4 @@
-#GIT
+# GIT
 
 ###### es un sistema de control de versiones distribuido, lo que significa que un clon local del proyecto es un repositorio de control de versiones completo. Estos repositorios permiten trabajar sin conexión o de forma remota con facilidad. Los desarrolladores confirman su trabajo localmente y a continuación, sincronizan su copia del repositorio con la copia del servidor. En pocas palabras en nuestra computadora podemos crear nuestra versión y luego subirla y sincronizarla, todas las versiones estarán en un solo servidor y luego una persona se encarga de que funcionen todas.
 ###### Usando un control de versiones la versión nueva no sustituye la versión anterior, la versión 0.1 sigue existiendo de igual forma que la versión 0.2, si hubiese un error en la nueva versión siempre se puede volver a la versión anterior haciendo rollback para corregir sin tanto problema.
@@ -19,7 +19,7 @@
  diferente hay que buscar la palabra, wait quiere
  decir que la terminal de git va a esperar hasta que
  nosotros cerremos el archivo en el editor de código
- para poder seguir con las instrucciones 
+ para poder seguir con las instrucciones)
 rocio@Rocio MINGW64 ~/OneDrive/Desktop
  $ git config --global -e (este comando es para
  verificar que tenemos nuestra configuración y nos
@@ -31,5 +31,5 @@ rocio@Rocio MINGW64 ~/OneDrive/Desktop
 rocio@Rocio MINGW64 ~/OneDrive/Desktop
 $ git config --global core.autocrlf true (esta
 palabra es para Windows, para Linux o mac es input)  rocio@Rocio MINGW64 ~/OneDrive/Desktop
-$ git config --global -h (esto nos va a traer una ayuda de todas las cosas que podemos hacer, desde configurarlo e forma local y no global y demás cosas, para limpiar la terminal solo se escribe clear y se da click.
+$ git config --global -h (esto nos va a traer una ayuda de todas las cosas que podemos hacer, desde configurarlo e forma local y no global y demás cosas, para limpiar la terminal solo se escribe clear y se da click)
 
