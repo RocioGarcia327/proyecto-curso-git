@@ -69,11 +69,25 @@ Date:   Sun Feb 22 14:58:43 2026 -0600
 ###### git stash pop nos trae los archivos con los cambios que no se veian para que podamos seguir trabajando sobre ellos y correguir lo necesario
 # DELETE BRANCH
 ###### El comando git branch -d nombre de la rama nos elimina las ramas de forma local
-######
+###### El comando git push origin --delete nombre de la rama nos eimina las ramas de forma remota
 # FETCH
+###### Este comando nos trae el historial con los cambios que se hicieron de forma remota pero no trae los archivos en si, se usa como git fetch
+###### git log --oneline --all nos va a permitir ver todas las modificaciones que se hicieron de forma remota
+###### git tree solo se usa en apple o linux
 # RESET Y RESET --HARD
+###### git checkout (nombre del archivo) nos regresa al ultimo cambio realizado
+###### git reset sirve para volver atras en los cambios y los saca de changes
+###### git reset --hard es para que los archivos vuelvan al estado del commit anterior, se pone tambien el hash o numero que identifican al commital que vamos a regresar
 # CLONE
+###### Para tratar de re cuperar una carpeta o descargarla para trabajar en otro equipo, entramos en nuestro github, usando git clone quedara linkeadolo que se descargara con el repositorio
+###### damos click en https donde se copiara el link del repositorio, abrimos la terminal en la pantalla y usamos git bash, ponemos git clone y pegamos el link copiado, de esta forma aparecen los archivos y ramas que tenemos de forma remota para que podamos trabajar de forma local
+###### si se hace un clone ccon otro repositorio se tiene que pedir permiso
 # MERGE
+###### Aqui copio un codigo de su repositorio, lo inicializo con git init y luego git add, despues un git commit -m(descripcion), agrega el origen con git remote add origin (url) luego git push origin master para mergear una rama nos vamos a master y agregamos la rama, se la trae y mezcla sobre la rama master (git merge nombre de la rama)
 # CONFLICTOS
 # FORK & PULL REQUEST
+###### Fork es para hacer un clonado de algun repositorio que no es de nosotros, hacer modificaciones y pedir que se tomen en cuenta, en el apartado sing up es para crear un nuevo usuario
+###### La idea no es crear un nuevo repositorio sino ir al que ya tenemos o sobre el que queremos trabajar  y vamos a forkear
+###### Nos metemos al repositorio que elegimos y vamos al apartado fork, nos da la opcion create a new fork, es basicamente como crear un nuevo repositorio, lo modificamos, en este caso se hace en la version web, si se hiciera de forma local tendriamos que configurar todo como el nuevo usuarioque esta haciendo las modificaciones
+###### una vez modificado nos da el mensaje this branch ist commit a head of (usuario dueño del repositorio), le damos en contribute luego open pull request, esto es para pedirle al dueño que haga los cambios sin tener acceso total al codigo, el dueño decide si los aplica o no son de ayuda
 # MARKDOWN & README.md
