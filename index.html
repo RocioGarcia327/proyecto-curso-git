@@ -1,0 +1,183 @@
+<!--Sintaxis de HTML
+este es un comentario y se usa para informar lo que se esta
+haciendo en el codigo-->
+
+<h1>Hola mundo</h1>
+<p>Yo soy un parrafo</p>
+
+<!-- Etiquetas vacias o self closing
+ estas etiquetas no tienen cierre-->
+<img src="https://www.google.com/imgres?q=im%C3%A1genes%20de%20fondos
+%20de%20pantalla&imgurl=https%3A%2F%2Fwallpapers.com%2Fimages
+%2Ffeatured%2Ffondo-de-pantalla-de-iphone-con-dibujos-animados-
+dubzue0ncd7tr0m7.jpg&imgrefurl=https%3A%2F%2Fes.wallpapers.com%2Ff
+ondo-de-pantalla-de-iphone-con-dibujos-animados&docid=i_dSbopPLpp8TM&tb
+nid=zvWmE8iwcATRUM&vet=12ahUKEwjo6uOc5ZGTAxWHmSYFHewIB4kQnPAOegQIIxAB..
+i&w=887&h=1920&hcb=2&ved=2ahUKEwjo6uOc5ZGTAxWHmSYFHewIB4kQnPAOegQIIxAB"
+width="100">
+
+<!--Atributos
+permiten agregar informacion adicional a una etiqueta, a veces es obligatoria
+u opcional
+Tambien existen atributos booleanos, son los valores que solo pueden ser 
+verdadero o falso(no tienen valor)
+-->
+<tag atributo="valor"></tag>
+<form><!--etiqueta padre-->
+    <input type="email" required><!--etiqueta hijos-->
+    <input type="password" required>
+    <input type="submit" >
+</form>
+
+<!--Estructura-->
+<!DOCTYPE html><!--le indica al navegador el tipo de documento
+(en este caso HTML5)-->
+<html lang="es"><!--es la raiz de todo documento HTML, lang es el idioma
+    sirve para que el navegador sepa en que idioma esta-->
+    <head>
+        <!--esta es la cabeza, informacion necesaria para el navegador
+        pero que no se visualiza en la pagina web
+        utf8 es una codificacion de caracteres universal
+        la descripcion es lo que mostrara el navegador cuando busquen la
+        pagina web
+        link te permite traer recursos externos a la pagina
+        href es la direccion donde se encuentra nuestra imagen
+        stylesheet es para agregar los estilos, es CSS
+        script mme conecta con los java script, es la programacion que
+        manipula los datos
+        titulo es el titulo que aparece en nuestor navegador-->
+        <meta charset="utf8">
+        <meta name="description" content="Bienvenidos a mi
+        pagina web">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+        <title>Bienvenidos</title>
+    </head>
+    <body>
+        <!--este es el cuerpo, se agrega toda la informacion que los 
+        usuarios ven-->
+        <header>
+
+        </header>
+        <nav>
+            <!--es para menus de navegacion-->
+        </nav>
+        <aside>
+            <!--cualquier informacion relacionada pero que no es la principal-->
+        </aside>
+        <main>
+            <!--aqui va toda la informacion principal de la pagina-->
+            <h1>Hola</h1>
+            <hr><!--solo es una separacion de tema, con una linea por ejemplo-->
+            <p>Este es un parrafo </p>
+            <pre>
+                <!--con este se respeta el contenido tal cual se escribio,
+                respeta los saltos de linea, espacios-->
+            </pre>
+            <blockquote>
+                <!--es un bloque de cita-->
+            </blockquote>
+            <div>
+                <!--es una caja vacia, se usa para organizar contenido y despues 
+                aplicarle estilo con css-->
+            </div>
+            <br> <!--breaking rule, se usa para hacer un salto de linea-->
+            <section>
+                <!--es para divisiones internas del mismo contenido-->
+            </section>
+            <!--Elementos de linea-->
+                <em>
+                    <!--es para darle enfasis a algo-->
+                </em>
+                <strong>
+                    <!--es texto mas importante-->
+                </strong>
+                <small>
+                    <!--es texto menos importante-->
+                </small>
+                <wbr>
+                    <!--word breaking rule, es para cortar alguna palabra muy larga-->
+                </wbr>
+                <b>
+                    <!--bold, no significa nada pero puede poner la letra en
+                    negrita-->
+                </b>
+                <u>
+                    <!--underline, no significa nada pero puede poner la letra en
+                    subrayado-->
+                </u>
+                <i>
+                    <!--italic, no significa nada pero puede poner la letra en
+                    cursiva-->
+                </i>
+                <cite>
+                    <!--es una cita en linea-->
+                </cite>
+                <sub>
+                    <!--subindice, se puede usar para notas al pie-->
+                </sub>
+                <sup>
+                    <!--superindice,se puede usar para notas al pie-->
+                </sup>
+                <time datetime="">
+                    <!-- es para indicar el tiempo-->
+                </time>
+            <!--Enlaces y etiquetas
+                <arquitectura cliente servidor>
+                    <arquitectura es  la forma en que estan estructurados 
+                    los componentes de un sistema>
+                    <cliente es el dispositivo que solicita la pagina web>
+                    <servidor es el hardward y software que almacena y 
+                    entrega la pagina web y sus componentes>
+            -->
+                <a href="" target="_blank">
+                    <!--este es un enlace,
+                    href es obligatorio lleva el destino a donde nos llevara
+                    target=_blank se refiere a que nos abra la pagina en una
+                    nueva pestaña
+                    rel="nofollow" es para que no enlace los links a ceo, no
+                    transmite a ceo
+                    rel="noreference" no indica al destino el origen del link
+                    rel="noopener" evita la incrustacion de codigo malicioso
+                    al abrir enlaces en nuevas pestañas
+                    download es un atributo booleano, descarga el recurso en 
+                    lugar de abrirlo en el navegador, para que funcione el atributo
+                    tiene que estar en nuestro servidor y no en un link externo,
+                    solo funciona si estas trabajando en el servidor y no solo en
+                    los archivos-->
+                    <!--rutas relativas y absolutas
+                        1.absolutas tienen un protocolo (http o https) y son unicas,
+                        necesitas internet para llegar ahi, se usan para rutas externas
+                        2.relativas se usan para rutas internas del proyecto, es decir, 
+                        si tenemos imagenes en las carpetas de nuestro proyecto se
+                        escribe su nombre y extension (imagen.jpg), 
+                        no usan https, si recurso esta en una carpeta por encina se usa
+                        (../imagen.jpg), si el recurso esta en una carpeta por debajo
+                        se usa (img/goku.jpg)
+                        3.relativas a la raiz se construyen a partir de la carpeta raiz
+                        del proyecto, se escribe siempre con "/"
+                    -->
+                </a>
+                <!--Enlaces internos
+                    se puede crear un id='valor'
+                    en nuestro enlace mandamos llamar al id con un href='#valor'
+                -->
+            <!--Listas
+                1.Ordenadas(<ol></ol>) tienen una secuencia de numeros
+                2.No ordenadas(<ul></ul>) no indican secuencia, se indican con la etiqueta
+                <li></li>
+                3.Listas anidadas
+                son listas para enumerar otras actividades dentro de la lista principal,
+                no debe ponerse un li dentro de otro li, antes debe ponerse un ol
+                4.Listas de definicion(<dl></dl>)
+                <dt> definition term es como el termino a definir
+                <dd> definition description es la explicacion del termino
+            -->
+        </main>
+    
+        <footer>
+            <!-- es el pie de pagina-->
+        </footer>
+    </body>
+</html>
